@@ -1,0 +1,14 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 로그인 없이 사용하는 구성: 누구나 읽기/쓰기 가능
+    // (주소를 아는 사람은 관리자 화면에서 수정할 수 있으므로 주소 관리에 주의하세요)
+    // partners/{pid} + 하위 컬렉션(rows / notices / images)
+    match /partners/{pid}/{document=**} {
+      allow read, write: if true;
+    }
+    match /partners/{pid} {
+      allow read, write: if true;
+    }
+  }
+}

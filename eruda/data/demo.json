@@ -1,0 +1,10 @@
+[
+ {"id":"demo-skt","group":"SKT","name":"데모 거래처","order":1,"updatedAt":0,"notices":[{"id":"n1","text":"데모 공지사항입니다. 관리자 설정에서 수정하세요."}],
+  "wired":{"link":"https://example.com/wired","required":"OSS 원스탑 여부 : n\n동판 여부 : y\n\n고객명 :\n주민번호 :\n설치장소 :","memo":""},
+  "rows":[
+   {"id":"r1","model":"통합 공식 신청서 (일반)","kind":"etc","mode":"mnp","links":{"MNP":"https://example.com/a","기변":"https://example.com/b","신규가입":""}},
+   {"id":"r2","model":"갤럭시S26","kind":"galaxy","mode":"mnp","links":{"MNP":"https://example.com/c","기변":"https://example.com/d","신규가입":""}},
+   {"id":"r3","model":"아이폰17_256G","kind":"iphone","mode":"mnp","links":{"MNP":"https://example.com/e","기변":"https://example.com/f","신규가입":""}},
+   {"id":"r4","model":"워치9","kind":"etc","mode":"new","links":{"MNP":"","기변":"","신규가입":"https://example.com/g"}}
+  ]}
+]
